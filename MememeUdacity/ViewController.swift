@@ -13,6 +13,7 @@ class ViewController: UIViewController {
     var count = 0
     var label:UILabel!
     var incrementButton:UIButton!
+    var decrementButton:UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,18 +25,28 @@ class ViewController: UIViewController {
         
         // Programatically create button
         incrementButton = UIButton()
+        incrementButton.tag = 1
         incrementButton.frame = CGRectMake(150, 250, 100, 60)
         incrementButton.setTitle("Increment", forState: .Normal)
         incrementButton.setTitleColor(UIColor.blueColor(), forState: .Normal)
-        incrementButton.addTarget(self, action: "incrementCount", forControlEvents: UIControlEvents.TouchUpInside)
+        incrementButton.addTarget(self, action: "modifyCount:", forControlEvents: UIControlEvents.TouchUpInside)
+        
+        decrementButton = UIButton()
+        decrementButton.tag = -1
+        decrementButton.frame = CGRectMake(150, 350, 100, 60)
+        decrementButton.setTitle("Decrement", forState: .Normal)
+        decrementButton.setTitleColor(UIColor.blueColor(), forState: .Normal)
+        decrementButton.addTarget(self, action: "modifyCount:", forControlEvents: UIControlEvents.TouchUpInside)
         
         // Add buttons to main view
         self.view.addSubview(label)
         self.view.addSubview(incrementButton)
+        self.view.addSubview(decrementButton)
     }
     
-    func incrementCount() {
-        count++
+    func modifyCount(sender: UIButton) {
+        println(sender)
+        count += sender.tag
         label.text = "\(count)"
     }
 
