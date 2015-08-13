@@ -53,6 +53,9 @@
                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="dtD-qR-nZ1">
                                         <rect key="frame" x="108" y="119" width="51" height="31"/>
                                         <color key="onTintColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <connections>
+                                            <action selector="changeColorComponent" destination="vXZ-lx-hvc" eventType="valueChanged" id="2Hv-ke-56H"/>
+                                        </connections>
                                     </switch>
                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" onImage="*" translatesAutoresizingMaskIntoConstraints="NO" id="bQM-ag-oi6">
                                         <rect key="frame" x="108" y="21" width="51" height="31"/>
@@ -61,10 +64,16 @@
                                             <constraint firstAttribute="height" constant="31" id="p9n-rf-js7"/>
                                         </constraints>
                                         <color key="onTintColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <connections>
+                                            <action selector="changeColorComponent" destination="vXZ-lx-hvc" eventType="valueChanged" id="c7A-0g-YCd"/>
+                                        </connections>
                                     </switch>
-                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="1kV-b4-uAi">
-                                        <rect key="frame" x="108" y="63" width="51" height="31"/>
+                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="1kV-b4-uAi">
+                                        <rect key="frame" x="108" y="67" width="51" height="31"/>
                                         <color key="onTintColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <connections>
+                                            <action selector="changeColorComponent" destination="vXZ-lx-hvc" eventType="valueChanged" id="yw6-Ns-kQA"/>
+                                        </connections>
                                     </switch>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -80,7 +89,6 @@
                                     <constraint firstItem="dtD-qR-nZ1" firstAttribute="leading" secondItem="bj1-WZ-9Ch" secondAttribute="trailing" constant="18" id="JXf-oI-0Sb"/>
                                     <constraint firstItem="bQM-ag-oi6" firstAttribute="leading" secondItem="vNn-Og-Fyt" secondAttribute="trailing" constant="18" id="NuR-KQ-3fL"/>
                                     <constraint firstItem="1kV-b4-uAi" firstAttribute="leading" secondItem="4xQ-Ea-U5L" secondAttribute="trailing" constant="18" id="W6L-9A-rSi"/>
-                                    <constraint firstItem="dtD-qR-nZ1" firstAttribute="top" secondItem="1kV-b4-uAi" secondAttribute="bottom" constant="25" id="WIn-tt-FlO"/>
                                     <constraint firstItem="bj1-WZ-9Ch" firstAttribute="top" secondItem="4xQ-Ea-U5L" secondAttribute="bottom" constant="30" id="WnD-lP-leZ"/>
                                     <constraint firstItem="vNn-Og-Fyt" firstAttribute="top" secondItem="daF-g3-3AY" secondAttribute="top" constant="23" id="a3J-b6-3hv"/>
                                     <constraint firstItem="bj1-WZ-9Ch" firstAttribute="centerY" secondItem="dtD-qR-nZ1" secondAttribute="centerY" id="nFW-4p-1RD"/>
@@ -92,7 +100,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="b4M-EF-kG8">
                                 <rect key="frame" x="210" y="304" width="180" height="165"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ceb-IE-38Q">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ceb-IE-38Q">
                                         <rect key="frame" x="5" y="5" width="170" height="155"/>
                                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
@@ -104,6 +112,8 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="165" id="7Yu-zb-BMT"/>
+                                    <constraint firstItem="ceb-IE-38Q" firstAttribute="centerX" secondItem="b4M-EF-kG8" secondAttribute="centerX" id="LdW-rh-orM"/>
+                                    <constraint firstItem="ceb-IE-38Q" firstAttribute="centerY" secondItem="b4M-EF-kG8" secondAttribute="centerY" id="czL-ff-vYN"/>
                                     <constraint firstAttribute="width" constant="180" id="ro2-lD-EJW"/>
                                 </constraints>
                             </view>
@@ -117,6 +127,12 @@
                             <constraint firstItem="b4M-EF-kG8" firstAttribute="leading" secondItem="daF-g3-3AY" secondAttribute="leading" id="Yz3-lh-kZb"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="blueControl" destination="dtD-qR-nZ1" id="VIb-o3-9pn"/>
+                        <outlet property="colorView" destination="ceb-IE-38Q" id="VDp-Db-TVC"/>
+                        <outlet property="greenControl" destination="1kV-b4-uAi" id="xJf-PX-4cM"/>
+                        <outlet property="redControl" destination="bQM-ag-oi6" id="zu0-fu-wIQ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
