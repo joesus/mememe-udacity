@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Tgl-X0-OfC">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
@@ -132,6 +132,7 @@
                             <constraint firstItem="b4M-EF-kG8" firstAttribute="leading" secondItem="daF-g3-3AY" secondAttribute="leading" id="Yz3-lh-kZb"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="22A-2N-vQy"/>
                     <connections>
                         <outlet property="blueControl" destination="41F-pv-zR8" id="8kU-5N-DB9"/>
                         <outlet property="colorView" destination="ceb-IE-38Q" id="VDp-Db-TVC"/>
@@ -141,6 +142,70 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1577" y="621"/>
+        </scene>
+        <!--Table Of ContentsVC-->
+        <scene sceneID="Phb-ZE-4sz">
+            <objects>
+                <viewController id="4zw-lK-aTR" customClass="TableOfContentsVC" customModule="MememeUdacity" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="FNw-25-VoG"/>
+                        <viewControllerLayoutGuide type="bottom" id="LKA-km-lBn"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="a4A-nb-b23">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7sa-FP-a0V">
+                                <rect key="frame" x="258" y="150" width="85" height="30"/>
+                                <state key="normal" title="Color Picker">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="vXZ-lx-hvc" kind="show" id="fJ7-zq-10T"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KHU-dm-pTj">
+                                <rect key="frame" x="262" y="235" width="77" height="30"/>
+                                <state key="normal" title="experiment">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="experiment:" destination="4zw-lK-aTR" eventType="touchUpInside" id="PxT-NN-6IL"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerY" secondItem="KHU-dm-pTj" secondAttribute="centerY" constant="50" id="F5o-1Z-roK"/>
+                            <constraint firstAttribute="centerX" secondItem="7sa-FP-a0V" secondAttribute="centerX" constant="-0.5" id="gCn-cc-Wos"/>
+                            <constraint firstAttribute="centerY" secondItem="7sa-FP-a0V" secondAttribute="centerY" constant="135" id="og9-pY-yzq"/>
+                            <constraint firstAttribute="centerX" secondItem="KHU-dm-pTj" secondAttribute="centerX" constant="-0.5" id="yz9-T9-gTq"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Bxi-3e-Car"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="juH-RP-I1Z" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="906" y="935"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="zdi-gQ-4CE">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Tgl-X0-OfC" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="P9N-Nm-icz">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="4zw-lK-aTR" kind="relationship" relationship="rootViewController" id="cHO-Uj-UlR"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZAY-cU-Xfc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="230" y="1060"/>
         </scene>
     </scenes>
 </document>

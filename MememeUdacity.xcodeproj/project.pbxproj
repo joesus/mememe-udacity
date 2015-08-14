@@ -13,6 +13,7 @@
 		2773FBC41B7D30CD0077FEB0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2773FBC31B7D30CD0077FEB0 /* Images.xcassets */; };
 		2773FBC71B7D30CD0077FEB0 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2773FBC51B7D30CD0077FEB0 /* LaunchScreen.xib */; };
 		2773FBD31B7D30CD0077FEB0 /* MememeUdacityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2773FBD21B7D30CD0077FEB0 /* MememeUdacityTests.swift */; };
+		2773FBDD1B7E44CC0077FEB0 /* TableOfContentsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2773FBDC1B7E44CC0077FEB0 /* TableOfContentsVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		2773FBCC1B7D30CD0077FEB0 /* MememeUdacityTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MememeUdacityTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2773FBD11B7D30CD0077FEB0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2773FBD21B7D30CD0077FEB0 /* MememeUdacityTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MememeUdacityTests.swift; sourceTree = "<group>"; };
+		2773FBDC1B7E44CC0077FEB0 /* TableOfContentsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableOfContentsVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 				2773FBC31B7D30CD0077FEB0 /* Images.xcassets */,
 				2773FBC51B7D30CD0077FEB0 /* LaunchScreen.xib */,
 				2773FBBA1B7D30CD0077FEB0 /* Supporting Files */,
+				2773FBDC1B7E44CC0077FEB0 /* TableOfContentsVC.swift */,
 			);
 			path = MememeUdacity;
 			sourceTree = "<group>";
@@ -214,6 +217,7 @@
 			files = (
 				2773FBBF1B7D30CD0077FEB0 /* ViewController.swift in Sources */,
 				2773FBBD1B7D30CD0077FEB0 /* AppDelegate.swift in Sources */,
+				2773FBDD1B7E44CC0077FEB0 /* TableOfContentsVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
