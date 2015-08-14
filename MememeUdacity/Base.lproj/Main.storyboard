@@ -256,6 +256,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Bxi-3e-Car"/>
+                    <connections>
+                        <segue destination="F60-8Z-Z0z" kind="show" identifier="rollDice" id="iwS-bU-bze"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="juH-RP-I1Z" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

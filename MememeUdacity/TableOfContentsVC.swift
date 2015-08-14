@@ -28,13 +28,15 @@ class TableOfContentsVC: UIViewController {
     }
     
     @IBAction func rollTheDice(sender: UIButton) {
+        performSegueWithIdentifier("rollDice", sender: sender)
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         var controller: DiceViewController
         
-        controller = self.storyboard?.instantiateViewControllerWithIdentifier("DiceViewController") as! DiceViewController
+        controller = segue.destinationViewController as! DiceViewController
         controller.firstValue = self.randomDiceValue()
         controller.secondValue = self.randomDiceValue()
-        
-        self.presentViewController(controller, animated: true, completion: nil)
     }
     
     

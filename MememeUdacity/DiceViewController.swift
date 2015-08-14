@@ -42,6 +42,6 @@ class DiceViewController: UIViewController {
     }
     
     @IBAction func dismiss(sender: UIButton) {
-        self.dismissViewControllerAnimated(true, completion: nil)
+        self.navigationController?.popViewControllerAnimated(true)
     }
 }
