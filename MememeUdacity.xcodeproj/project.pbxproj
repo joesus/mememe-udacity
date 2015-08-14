@@ -14,6 +14,7 @@
 		2773FBC71B7D30CD0077FEB0 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2773FBC51B7D30CD0077FEB0 /* LaunchScreen.xib */; };
 		2773FBD31B7D30CD0077FEB0 /* MememeUdacityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2773FBD21B7D30CD0077FEB0 /* MememeUdacityTests.swift */; };
 		2773FBDD1B7E44CC0077FEB0 /* TableOfContentsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2773FBDC1B7E44CC0077FEB0 /* TableOfContentsVC.swift */; };
+		2773FBE11B7E4FCF0077FEB0 /* DiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2773FBE01B7E4FCF0077FEB0 /* DiceViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		2773FBD11B7D30CD0077FEB0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2773FBD21B7D30CD0077FEB0 /* MememeUdacityTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MememeUdacityTests.swift; sourceTree = "<group>"; };
 		2773FBDC1B7E44CC0077FEB0 /* TableOfContentsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableOfContentsVC.swift; sourceTree = "<group>"; };
+		2773FBE01B7E4FCF0077FEB0 /* DiceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiceViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +88,7 @@
 				2773FBC51B7D30CD0077FEB0 /* LaunchScreen.xib */,
 				2773FBBA1B7D30CD0077FEB0 /* Supporting Files */,
 				2773FBDC1B7E44CC0077FEB0 /* TableOfContentsVC.swift */,
+				2773FBE01B7E4FCF0077FEB0 /* DiceViewController.swift */,
 			);
 			path = MememeUdacity;
 			sourceTree = "<group>";
@@ -218,6 +221,7 @@
 				2773FBBF1B7D30CD0077FEB0 /* ViewController.swift in Sources */,
 				2773FBBD1B7D30CD0077FEB0 /* AppDelegate.swift in Sources */,
 				2773FBDD1B7E44CC0077FEB0 /* TableOfContentsVC.swift in Sources */,
+				2773FBE11B7E4FCF0077FEB0 /* DiceViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

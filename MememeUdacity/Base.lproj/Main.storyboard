@@ -142,7 +142,68 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1577" y="621"/>
+            <point key="canvasLocation" x="1803" y="569"/>
+        </scene>
+        <!--Dice View Controller-->
+        <scene sceneID="agG-gM-Gmg">
+            <objects>
+                <viewController storyboardIdentifier="DiceViewController" id="F60-8Z-Z0z" customClass="DiceViewController" customModule="MememeUdacity" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="29a-A5-QeC"/>
+                        <viewControllerLayoutGuide type="bottom" id="DJS-ZU-0dH"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8px-wF-giA">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="d2" translatesAutoresizingMaskIntoConstraints="NO" id="JPc-fn-H97">
+                                <rect key="frame" x="250" y="285" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="4Jz-gz-dok"/>
+                                    <constraint firstAttribute="height" constant="100" id="HVl-iW-L4H"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="d1" translatesAutoresizingMaskIntoConstraints="NO" id="pol-VL-BlQ">
+                                <rect key="frame" x="250" y="122" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="I2o-Yq-OPh"/>
+                                    <constraint firstAttribute="height" constant="100" id="Qq1-VB-oIF"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EX9-Nh-Of7">
+                                <rect key="frame" x="277" y="535" width="47" height="52"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="47" id="2GA-eV-iTe"/>
+                                    <constraint firstAttribute="height" constant="52" id="loK-sn-Gny"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="33"/>
+                                <state key="normal" title="OK">
+                                    <color key="titleColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="dismiss:" destination="F60-8Z-Z0z" eventType="touchUpInside" id="Itw-BE-oyU"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="0.25098040700000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="EX9-Nh-Of7" secondAttribute="centerX" constant="-0.5" id="Bb8-1h-KeN"/>
+                            <constraint firstItem="pol-VL-BlQ" firstAttribute="top" secondItem="29a-A5-QeC" secondAttribute="bottom" constant="102" id="IX8-Zy-fWz"/>
+                            <constraint firstItem="JPc-fn-H97" firstAttribute="top" secondItem="pol-VL-BlQ" secondAttribute="bottom" constant="63" id="M4F-qP-Lgt"/>
+                            <constraint firstItem="EX9-Nh-Of7" firstAttribute="top" secondItem="JPc-fn-H97" secondAttribute="bottom" constant="150" id="V3r-Gd-myV"/>
+                            <constraint firstAttribute="centerX" secondItem="pol-VL-BlQ" secondAttribute="centerX" id="fvZ-qb-tBr"/>
+                            <constraint firstAttribute="centerX" secondItem="JPc-fn-H97" secondAttribute="centerX" id="vks-Jr-RSQ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="firstDie" destination="pol-VL-BlQ" id="yvm-rL-5cx"/>
+                        <outlet property="secondDie" destination="JPc-fn-H97" id="6eY-4w-jLR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zci-ZC-YBK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1808" y="1314"/>
         </scene>
         <!--Table Of ContentsVC-->
         <scene sceneID="Phb-ZE-4sz">
@@ -174,10 +235,21 @@
                                     <action selector="experiment:" destination="4zw-lK-aTR" eventType="touchUpInside" id="PxT-NN-6IL"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lnX-ZY-cVc">
+                                <rect key="frame" x="263" y="316" width="75" height="30"/>
+                                <state key="normal" title="Dice Roller">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="rollTheDice:" destination="4zw-lK-aTR" eventType="touchUpInside" id="Il6-Cp-WUh"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="centerY" secondItem="KHU-dm-pTj" secondAttribute="centerY" constant="50" id="F5o-1Z-roK"/>
+                            <constraint firstAttribute="centerX" secondItem="lnX-ZY-cVc" secondAttribute="centerX" constant="-0.5" id="dkK-w8-3yo"/>
+                            <constraint firstAttribute="centerY" secondItem="lnX-ZY-cVc" secondAttribute="centerY" constant="-31" id="e4R-hU-FEy"/>
                             <constraint firstAttribute="centerX" secondItem="7sa-FP-a0V" secondAttribute="centerX" constant="-0.5" id="gCn-cc-Wos"/>
                             <constraint firstAttribute="centerY" secondItem="7sa-FP-a0V" secondAttribute="centerY" constant="135" id="og9-pY-yzq"/>
                             <constraint firstAttribute="centerX" secondItem="KHU-dm-pTj" secondAttribute="centerX" constant="-0.5" id="yz9-T9-gTq"/>
@@ -208,4 +280,8 @@
             <point key="canvasLocation" x="230" y="1060"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="d1" width="100" height="100"/>
+        <image name="d2" width="100" height="100"/>
+    </resources>
 </document>
