@@ -32,11 +32,13 @@ class TableOfContentsVC: UIViewController {
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        var controller: DiceViewController
-        
-        controller = segue.destinationViewController as! DiceViewController
-        controller.firstValue = self.randomDiceValue()
-        controller.secondValue = self.randomDiceValue()
+        if segue.identifier == "rollDice" {
+            var controller: DiceViewController
+            
+            controller = segue.destinationViewController as! DiceViewController
+            controller.firstValue = self.randomDiceValue()
+            controller.secondValue = self.randomDiceValue()            
+        }
     }
     
     

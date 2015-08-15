@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		274FF7F11B7E7B4A00A3A415 /* RoshamboVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274FF7F01B7E7B4A00A3A415 /* RoshamboVC.swift */; };
+		274FF7F31B7E7BA400A3A415 /* RoshamboResultsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274FF7F21B7E7BA400A3A415 /* RoshamboResultsVC.swift */; };
 		2773FBBD1B7D30CD0077FEB0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2773FBBC1B7D30CD0077FEB0 /* AppDelegate.swift */; };
 		2773FBBF1B7D30CD0077FEB0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2773FBBE1B7D30CD0077FEB0 /* ViewController.swift */; };
 		2773FBC21B7D30CD0077FEB0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2773FBC01B7D30CD0077FEB0 /* Main.storyboard */; };
@@ -28,6 +30,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		274FF7F01B7E7B4A00A3A415 /* RoshamboVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoshamboVC.swift; sourceTree = "<group>"; };
+		274FF7F21B7E7BA400A3A415 /* RoshamboResultsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoshamboResultsVC.swift; sourceTree = "<group>"; };
 		2773FBB71B7D30CD0077FEB0 /* MememeUdacity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MememeUdacity.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2773FBBB1B7D30CD0077FEB0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2773FBBC1B7D30CD0077FEB0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -89,6 +93,8 @@
 				2773FBBA1B7D30CD0077FEB0 /* Supporting Files */,
 				2773FBDC1B7E44CC0077FEB0 /* TableOfContentsVC.swift */,
 				2773FBE01B7E4FCF0077FEB0 /* DiceViewController.swift */,
+				274FF7F01B7E7B4A00A3A415 /* RoshamboVC.swift */,
+				274FF7F21B7E7BA400A3A415 /* RoshamboResultsVC.swift */,
 			);
 			path = MememeUdacity;
 			sourceTree = "<group>";
@@ -218,6 +224,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				274FF7F31B7E7BA400A3A415 /* RoshamboResultsVC.swift in Sources */,
+				274FF7F11B7E7B4A00A3A415 /* RoshamboVC.swift in Sources */,
 				2773FBBF1B7D30CD0077FEB0 /* ViewController.swift in Sources */,
 				2773FBBD1B7D30CD0077FEB0 /* AppDelegate.swift in Sources */,
 				2773FBDD1B7E44CC0077FEB0 /* TableOfContentsVC.swift in Sources */,
@@ -417,6 +425,7 @@
 				2773FBD81B7D30CD0077FEB0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2773FBD91B7D30CD0077FEB0 /* Build configuration list for PBXNativeTarget "MememeUdacityTests" */ = {
 			isa = XCConfigurationList;
@@ -425,6 +434,7 @@
 				2773FBDB1B7D30CD0077FEB0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
