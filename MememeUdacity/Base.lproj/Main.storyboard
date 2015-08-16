@@ -339,6 +339,7 @@
                     <connections>
                         <outlet property="cashTextField" destination="mAj-dV-kC3" id="MPc-Or-F8p"/>
                         <outlet property="lockableTextField" destination="GEh-Zu-clN" id="B25-9K-s4A"/>
+                        <outlet property="textFieldLock" destination="8z7-a0-zRh" id="hKv-Sk-XyI"/>
                         <outlet property="zipCodeField" destination="BmR-VE-HRO" id="vVz-Mt-5TF"/>
                     </connections>
                 </viewController>

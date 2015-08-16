@@ -20,7 +20,6 @@
 		F4F08F771B7FD53800A0956F /* TextFieldExamplesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F08F761B7FD53800A0956F /* TextFieldExamplesVC.swift */; };
 		F4F08F791B7FD86F00A0956F /* ZipCodeDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F08F781B7FD86F00A0956F /* ZipCodeDelegate.swift */; };
 		F4F08F7B1B7FD89700A0956F /* CashTextDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F08F7A1B7FD89700A0956F /* CashTextDelegate.swift */; };
-		F4F08F7D1B7FD8CC00A0956F /* LockableTextDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F08F7C1B7FD8CC00A0956F /* LockableTextDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,7 +50,6 @@
 		F4F08F761B7FD53800A0956F /* TextFieldExamplesVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFieldExamplesVC.swift; sourceTree = "<group>"; };
 		F4F08F781B7FD86F00A0956F /* ZipCodeDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZipCodeDelegate.swift; sourceTree = "<group>"; };
 		F4F08F7A1B7FD89700A0956F /* CashTextDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CashTextDelegate.swift; sourceTree = "<group>"; };
-		F4F08F7C1B7FD8CC00A0956F /* LockableTextDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LockableTextDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,7 +137,6 @@
 			children = (
 				F4F08F781B7FD86F00A0956F /* ZipCodeDelegate.swift */,
 				F4F08F7A1B7FD89700A0956F /* CashTextDelegate.swift */,
-				F4F08F7C1B7FD8CC00A0956F /* LockableTextDelegate.swift */,
 			);
 			name = "TextField Delegates";
 			path = ..;
@@ -249,7 +246,6 @@
 				F4F08F791B7FD86F00A0956F /* ZipCodeDelegate.swift in Sources */,
 				274FF7F11B7E7B4A00A3A415 /* RoshamboVC.swift in Sources */,
 				F4F08F771B7FD53800A0956F /* TextFieldExamplesVC.swift in Sources */,
-				F4F08F7D1B7FD8CC00A0956F /* LockableTextDelegate.swift in Sources */,
 				F4F08F7B1B7FD89700A0956F /* CashTextDelegate.swift in Sources */,
 				2773FBBF1B7D30CD0077FEB0 /* ViewController.swift in Sources */,
 				2773FBBD1B7D30CD0077FEB0 /* AppDelegate.swift in Sources */,

@@ -8,31 +8,34 @@
 
 import UIKit
 
-class TextFieldExamplesVC: UIViewController {
+class TextFieldExamplesVC: UIViewController, UITextFieldDelegate {
 
     // Setup Outlets
     @IBOutlet weak var zipCodeField: UITextField!
     @IBOutlet weak var cashTextField: UITextField!
     @IBOutlet weak var lockableTextField: UITextField!
+    @IBOutlet weak var textFieldLock: UISwitch!
     
     // Setup Delegate Objects
     let zipCodeDelegate = ZipCodeDelegate()
     let cashTextDelegate = CashTextDelegate()
-    let lockableTextDelegate = LockableTextDelegate()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         zipCodeField.delegate = zipCodeDelegate
         cashTextField.delegate = cashTextDelegate
-        lockableTextField.delegate = lockableTextDelegate
+        lockableTextField.delegate = self
         
         // Do any additional setup after loading the view.
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    func textField(textField: UITextField, shouldChangeCharactersInRange range: NSRange, replacementString string: String) -> Bool {
+        if textFieldLock.on {
+            return true
+        } else {
+            return false
+        }
     }
     
 }
