@@ -347,6 +347,53 @@
             </objects>
             <point key="canvasLocation" x="1808" y="2950"/>
         </scene>
+        <!--Meme Pick ImageVC-->
+        <scene sceneID="Vgf-jp-TgB">
+            <objects>
+                <viewController id="waS-JW-N9L" customClass="MemePickImageVC" customModule="MememeUdacity" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="uOz-dZ-q8v"/>
+                        <viewControllerLayoutGuide type="bottom" id="eDA-3r-RQi"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="9pT-ab-jiF">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Udk-Ko-bcf">
+                                <rect key="frame" x="200" y="200" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="56x-25-8V5"/>
+                                    <constraint firstAttribute="width" constant="200" id="eQl-8I-axj"/>
+                                </constraints>
+                            </imageView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cPb-na-W19">
+                                <rect key="frame" x="0.0" y="556" width="600" height="44"/>
+                                <items>
+                                    <barButtonItem title="Pick" id="gzC-Pl-Xn2">
+                                        <connections>
+                                            <action selector="pickImage:" destination="waS-JW-N9L" id="HcR-gU-w9P"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerY" secondItem="Udk-Ko-bcf" secondAttribute="centerY" id="Cb9-o2-k2p"/>
+                            <constraint firstAttribute="centerX" secondItem="Udk-Ko-bcf" secondAttribute="centerX" id="Qqg-0r-mMA"/>
+                            <constraint firstItem="cPb-na-W19" firstAttribute="leading" secondItem="9pT-ab-jiF" secondAttribute="leading" id="REv-lz-bx5"/>
+                            <constraint firstItem="cPb-na-W19" firstAttribute="bottom" secondItem="eDA-3r-RQi" secondAttribute="top" id="dCh-Iq-mr9"/>
+                            <constraint firstItem="cPb-na-W19" firstAttribute="centerX" secondItem="Udk-Ko-bcf" secondAttribute="centerX" id="kQ0-Zo-85y"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imagePickerView" destination="Udk-Ko-bcf" id="51R-yo-k29"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Sm3-jc-eDZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1816" y="3661"/>
+        </scene>
         <!--Roshambo ResultsVC-->
         <scene sceneID="TCF-cg-Eth">
             <objects>
@@ -405,7 +452,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7sa-FP-a0V">
-                                <rect key="frame" x="258" y="150" width="85" height="30"/>
+                                <rect key="frame" x="258" y="139" width="85" height="30"/>
                                 <state key="normal" title="Color Picker">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -414,7 +461,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KHU-dm-pTj">
-                                <rect key="frame" x="262" y="235" width="77" height="30"/>
+                                <rect key="frame" x="258" y="177" width="77" height="30"/>
                                 <state key="normal" title="experiment">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -423,7 +470,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lnX-ZY-cVc">
-                                <rect key="frame" x="263" y="316" width="75" height="30"/>
+                                <rect key="frame" x="258" y="215" width="75" height="30"/>
                                 <state key="normal" title="Dice Roller">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -432,7 +479,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PJd-y7-uE9">
-                                <rect key="frame" x="258" y="394" width="75" height="30"/>
+                                <rect key="frame" x="258" y="253" width="75" height="30"/>
                                 <state key="normal" title="Roshambo">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -441,7 +488,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F4Q-dx-hox">
-                                <rect key="frame" x="235" y="453" width="130" height="30"/>
+                                <rect key="frame" x="258" y="291" width="130" height="30"/>
                                 <state key="normal" title="TextFieldDelegates">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -449,20 +496,31 @@
                                     <segue destination="Hc1-jQ-AqA" kind="showDetail" id="HXO-v8-4nC"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mWf-dP-4bK">
+                                <rect key="frame" x="258" y="329" width="153" height="30"/>
+                                <state key="normal" title="Image Picker Example">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="waS-JW-N9L" kind="show" id="Vms-wT-Mu1"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="centerY" secondItem="KHU-dm-pTj" secondAttribute="centerY" constant="50" id="F5o-1Z-roK"/>
-                            <constraint firstAttribute="centerX" secondItem="F4Q-dx-hox" secondAttribute="centerX" id="Po2-q3-x5C"/>
-                            <constraint firstAttribute="centerY" secondItem="PJd-y7-uE9" secondAttribute="centerY" constant="-109" id="RiP-yZ-fyF"/>
+                            <constraint firstItem="mWf-dP-4bK" firstAttribute="top" secondItem="F4Q-dx-hox" secondAttribute="bottom" constant="8" id="1dt-ur-2bE"/>
+                            <constraint firstAttribute="centerX" secondItem="mWf-dP-4bK" secondAttribute="centerX" constant="-34.5" id="5NH-cm-82p"/>
+                            <constraint firstAttribute="centerY" secondItem="KHU-dm-pTj" secondAttribute="centerY" constant="108" id="F5o-1Z-roK"/>
+                            <constraint firstAttribute="centerX" secondItem="F4Q-dx-hox" secondAttribute="centerX" constant="-23" id="Po2-q3-x5C"/>
+                            <constraint firstAttribute="centerY" secondItem="PJd-y7-uE9" secondAttribute="centerY" constant="32" id="RiP-yZ-fyF"/>
                             <constraint firstAttribute="centerX" secondItem="PJd-y7-uE9" secondAttribute="centerX" constant="4.5" id="aBF-ct-voM"/>
-                            <constraint firstAttribute="centerX" secondItem="lnX-ZY-cVc" secondAttribute="centerX" constant="-0.5" id="dkK-w8-3yo"/>
-                            <constraint firstAttribute="centerY" secondItem="lnX-ZY-cVc" secondAttribute="centerY" constant="-31" id="e4R-hU-FEy"/>
-                            <constraint firstItem="F4Q-dx-hox" firstAttribute="top" secondItem="PJd-y7-uE9" secondAttribute="bottom" constant="29" id="ebn-XV-x3l"/>
+                            <constraint firstAttribute="centerX" secondItem="lnX-ZY-cVc" secondAttribute="centerX" constant="4.5" id="dkK-w8-3yo"/>
+                            <constraint firstAttribute="centerY" secondItem="lnX-ZY-cVc" secondAttribute="centerY" constant="70" id="e4R-hU-FEy"/>
+                            <constraint firstItem="F4Q-dx-hox" firstAttribute="top" secondItem="PJd-y7-uE9" secondAttribute="bottom" constant="8" id="ebn-XV-x3l"/>
                             <constraint firstAttribute="centerX" secondItem="7sa-FP-a0V" secondAttribute="centerX" constant="-0.5" id="gCn-cc-Wos"/>
-                            <constraint firstAttribute="centerY" secondItem="F4Q-dx-hox" secondAttribute="centerY" constant="-168" id="idQ-bz-rDO"/>
-                            <constraint firstAttribute="centerY" secondItem="7sa-FP-a0V" secondAttribute="centerY" constant="135" id="og9-pY-yzq"/>
-                            <constraint firstAttribute="centerX" secondItem="KHU-dm-pTj" secondAttribute="centerX" constant="-0.5" id="yz9-T9-gTq"/>
+                            <constraint firstAttribute="centerY" secondItem="F4Q-dx-hox" secondAttribute="centerY" constant="-6" id="idQ-bz-rDO"/>
+                            <constraint firstAttribute="centerY" secondItem="7sa-FP-a0V" secondAttribute="centerY" constant="146" id="og9-pY-yzq"/>
+                            <constraint firstAttribute="centerX" secondItem="KHU-dm-pTj" secondAttribute="centerX" constant="3.5" id="yz9-T9-gTq"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Bxi-3e-Car"/>
