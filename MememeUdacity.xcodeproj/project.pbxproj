@@ -17,6 +17,7 @@
 		2773FBD31B7D30CD0077FEB0 /* MememeUdacityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2773FBD21B7D30CD0077FEB0 /* MememeUdacityTests.swift */; };
 		2773FBDD1B7E44CC0077FEB0 /* TableOfContentsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2773FBDC1B7E44CC0077FEB0 /* TableOfContentsVC.swift */; };
 		2773FBE11B7E4FCF0077FEB0 /* DiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2773FBE01B7E4FCF0077FEB0 /* DiceViewController.swift */; };
+		27E244DB1B837BDE008C22E9 /* Meme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27E244DA1B837BDE008C22E9 /* Meme.swift */; };
 		F4F08F771B7FD53800A0956F /* TextFieldExamplesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F08F761B7FD53800A0956F /* TextFieldExamplesVC.swift */; };
 		F4F08F791B7FD86F00A0956F /* ZipCodeDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F08F781B7FD86F00A0956F /* ZipCodeDelegate.swift */; };
 		F4F08F7B1B7FD89700A0956F /* CashTextDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F08F7A1B7FD89700A0956F /* CashTextDelegate.swift */; };
@@ -48,6 +49,7 @@
 		2773FBD21B7D30CD0077FEB0 /* MememeUdacityTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MememeUdacityTests.swift; sourceTree = "<group>"; };
 		2773FBDC1B7E44CC0077FEB0 /* TableOfContentsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableOfContentsVC.swift; sourceTree = "<group>"; };
 		2773FBE01B7E4FCF0077FEB0 /* DiceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiceViewController.swift; sourceTree = "<group>"; };
+		27E244DA1B837BDE008C22E9 /* Meme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Meme.swift; sourceTree = "<group>"; };
 		F4F08F761B7FD53800A0956F /* TextFieldExamplesVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFieldExamplesVC.swift; sourceTree = "<group>"; };
 		F4F08F781B7FD86F00A0956F /* ZipCodeDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZipCodeDelegate.swift; sourceTree = "<group>"; };
 		F4F08F7A1B7FD89700A0956F /* CashTextDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CashTextDelegate.swift; sourceTree = "<group>"; };
@@ -106,6 +108,7 @@
 				274FF7F21B7E7BA400A3A415 /* RoshamboResultsVC.swift */,
 				F4F08F761B7FD53800A0956F /* TextFieldExamplesVC.swift */,
 				F4F08F7E1B814AD800A0956F /* MemePickImageVC.swift */,
+				27E244DA1B837BDE008C22E9 /* Meme.swift */,
 			);
 			path = MememeUdacity;
 			sourceTree = "<group>";
@@ -252,6 +255,7 @@
 				F4F08F7B1B7FD89700A0956F /* CashTextDelegate.swift in Sources */,
 				2773FBBF1B7D30CD0077FEB0 /* ViewController.swift in Sources */,
 				2773FBBD1B7D30CD0077FEB0 /* AppDelegate.swift in Sources */,
+				27E244DB1B837BDE008C22E9 /* Meme.swift in Sources */,
 				2773FBDD1B7E44CC0077FEB0 /* TableOfContentsVC.swift in Sources */,
 				2773FBE11B7E4FCF0077FEB0 /* DiceViewController.swift in Sources */,
 				F4F08F7F1B814AD800A0956F /* MemePickImageVC.swift in Sources */,
