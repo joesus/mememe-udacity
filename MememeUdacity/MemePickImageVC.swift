@@ -153,6 +153,13 @@ class MemePickImageVC: UIViewController, UINavigationControllerDelegate, UIImage
         let memedImage = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()
         
+        // SAVE TO APPLICTION CONTROLLER
+        let meme = Meme(topText: topTextField.text, bottomText: bottomTextField.text, image: memedImage)
+        
+        let object = UIApplication.sharedApplication().delegate
+        let appDelegate = object as! AppDelegate
+        appDelegate.memes.append(meme)
+        
         return memedImage
     }
     

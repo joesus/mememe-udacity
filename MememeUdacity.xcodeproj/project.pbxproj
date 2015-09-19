@@ -22,6 +22,8 @@
 		F4F08F791B7FD86F00A0956F /* ZipCodeDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F08F781B7FD86F00A0956F /* ZipCodeDelegate.swift */; };
 		F4F08F7B1B7FD89700A0956F /* CashTextDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F08F7A1B7FD89700A0956F /* CashTextDelegate.swift */; };
 		F4F08F7F1B814AD800A0956F /* MemePickImageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F08F7E1B814AD800A0956F /* MemePickImageVC.swift */; };
+		F4F08F811B8A371600A0956F /* MemeCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F08F801B8A371600A0956F /* MemeCollectionViewController.swift */; };
+		F4F08F831B8A391B00A0956F /* MemeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F08F821B8A391B00A0956F /* MemeCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +56,8 @@
 		F4F08F781B7FD86F00A0956F /* ZipCodeDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZipCodeDelegate.swift; sourceTree = "<group>"; };
 		F4F08F7A1B7FD89700A0956F /* CashTextDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CashTextDelegate.swift; sourceTree = "<group>"; };
 		F4F08F7E1B814AD800A0956F /* MemePickImageVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MemePickImageVC.swift; sourceTree = "<group>"; };
+		F4F08F801B8A371600A0956F /* MemeCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MemeCollectionViewController.swift; path = ../MemeCollectionViewController.swift; sourceTree = "<group>"; };
+		F4F08F821B8A391B00A0956F /* MemeCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MemeCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +99,7 @@
 		2773FBB91B7D30CD0077FEB0 /* MememeUdacity */ = {
 			isa = PBXGroup;
 			children = (
+				F4F08F801B8A371600A0956F /* MemeCollectionViewController.swift */,
 				2773FBBC1B7D30CD0077FEB0 /* AppDelegate.swift */,
 				2773FBBE1B7D30CD0077FEB0 /* ViewController.swift */,
 				2773FBC01B7D30CD0077FEB0 /* Main.storyboard */,
@@ -109,6 +114,7 @@
 				F4F08F761B7FD53800A0956F /* TextFieldExamplesVC.swift */,
 				F4F08F7E1B814AD800A0956F /* MemePickImageVC.swift */,
 				27E244DA1B837BDE008C22E9 /* Meme.swift */,
+				F4F08F821B8A391B00A0956F /* MemeCollectionViewCell.swift */,
 			);
 			path = MememeUdacity;
 			sourceTree = "<group>";
@@ -252,11 +258,13 @@
 				F4F08F791B7FD86F00A0956F /* ZipCodeDelegate.swift in Sources */,
 				274FF7F11B7E7B4A00A3A415 /* RoshamboVC.swift in Sources */,
 				F4F08F771B7FD53800A0956F /* TextFieldExamplesVC.swift in Sources */,
+				F4F08F811B8A371600A0956F /* MemeCollectionViewController.swift in Sources */,
 				F4F08F7B1B7FD89700A0956F /* CashTextDelegate.swift in Sources */,
 				2773FBBF1B7D30CD0077FEB0 /* ViewController.swift in Sources */,
 				2773FBBD1B7D30CD0077FEB0 /* AppDelegate.swift in Sources */,
 				27E244DB1B837BDE008C22E9 /* Meme.swift in Sources */,
 				2773FBDD1B7E44CC0077FEB0 /* TableOfContentsVC.swift in Sources */,
+				F4F08F831B8A391B00A0956F /* MemeCollectionViewCell.swift in Sources */,
 				2773FBE11B7E4FCF0077FEB0 /* DiceViewController.swift in Sources */,
 				F4F08F7F1B814AD800A0956F /* MemePickImageVC.swift in Sources */,
 			);
